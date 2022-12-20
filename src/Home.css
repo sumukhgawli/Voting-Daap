@@ -1,0 +1,309 @@
+/*HERO SECTION */
+.background {
+  width: 100%;
+  min-height: 600px;
+  background-color: blueviolet  ;
+  transform-origin: left top;
+  transform: skewY(-12deg);
+  position: absolute;
+  z-index: -1;
+}
+.hero_content.container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.right * {
+  color: #ffffff;
+}
+/*FIRST HERO SECTION  */
+.right {
+  display: flex;
+  flex-direction: column;
+  max-width: 520px;
+}
+.try {
+  background: #6562628c;
+  word-spacing: 3px;
+  width: max-content;
+}
+.r_details {
+  margin: 40px 0;
+  font-family: "Golf";
+  font-size: 55px;
+  line-height: 75px;
+  word-spacing: 10px;
+}
+.arrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.email {
+  background: rgba(214, 212, 212, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 5px 5px 5px 15px;
+  width: max-content;
+  margin: 0 0 50px;
+}
+.email input[type="text"] {
+  border: none;
+  outline: none;
+  background: none;
+  margin: 0 25px 0 10px;
+}
+.email * {
+  font-weight: 600;
+}
+
+button.gs {
+  border: none;
+  outline: none;
+  background: #4c56ce;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.r_desc {
+  word-spacing: 4px;
+  font-size: 17px;
+  color:rgb(202, 202, 202);
+}
+/*SECOND HERO SECTION  */
+.left {
+  position: relative;
+  width: 570px;
+  color: #ffffff;
+}
+/*ADDING THE EMPLOYEE  */
+.add_emp_card {
+  position: absolute;
+  background: rgba(214, 212, 212, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px 15px 70px 30px;
+  width: 600px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid;
+  right: 0;
+}
+.emp_card_heading {
+  display: flex;
+  justify-content: space-between;
+}
+.emp_details .image,
+.paycard .image {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.emp_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  margin: 15px 10px 0 0;
+}
+.addnew {
+  font-weight: 600;
+}
+.jobdetails {
+  position: absolute;
+  background: white;
+  color: #463f3f;
+  width: 350px;
+  top: 95px;
+  right: 0;
+  padding: 10px 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+span.role {
+  color: #dadada;
+}
+h4.job_heading {
+  padding: 5px 15px;
+}
+.break {
+  border-bottom: 1px solid #d6d6d6;
+}
+.job_desc {
+  display: flex;
+  padding: 15px 0 15px 15px;
+  flex-direction: column;
+  font-weight: 600;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.jobinner_desc {
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px 0;
+  justify-content: space-between;
+}
+
+p.job_t_field {
+  background: #d5f5ff;
+  padding: 10px;
+  width: 222px;
+  border-radius: 3px;
+  color: #40a6c1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*CARDS -PAYCARD  */
+.paycard {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  display: flex;
+  padding: 20px 20px;
+  width: 280px;
+  justify-content: space-between;
+  color: #463f3f;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  bottom: 0;
+}
+.profile {
+  font-size: 10px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.amount_details {
+  text-align: right;
+  font-size: 10px;
+}
+p.amount {
+  font-size: 18px;
+  font-weight: 600;
+}
+p.status {
+  background: #a4edbb;
+  text-align: left;
+  padding: 5px 10px;
+  width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  border-radius: 7px;
+}
+/*CARDS -MEDICAL CARD  */
+.medicalcard {
+  color: grey;
+  background: white;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 175px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 140px;
+  left: -50px;
+}
+.medicalcard > p:nth-child(1) {
+  font-size: 8px;
+}
+/*CARDS -PPO CARD  */
+.ppo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  font-weight: 600;
+}
+p.ppo_amount {
+  color: #3fe274;
+  font-weight: 600;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #3fe274;
+  border-radius: 50%;
+}
+
+/*POinters*/
+.pointer {
+  display: flex;
+}
+.pointer p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #347ed9;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.pointer p img {
+  margin-right: 10px;
+}
+.res_show{
+  display: none;
+}
+@media only screen and (max-width: 1170px) {
+ .add_emp_card{
+  display: none;
+ }
+}
+@media only screen and (max-width:940px) {
+  .left{
+    display: none;
+   }
+}
+@media only screen and (max-width:620px) {
+  .r_details {
+    font-size: 48px;
+  }
+  .hero_content.container {
+    padding: 0 0 0 20px;
+  }
+  section{
+    margin: 50px 0;
+  }
+  .email{
+    width: 90%;
+    margin: 0 0 15px;
+  }
+  .email input[type="text"] {
+    margin: 0;
+  }
+  .res_hide{
+    display: none;
+  }
+  button.gs{
+    background: rgb(174, 119, 224);
+  }
+  .res_show{
+    display: block;
+    margin-bottom: 20px;
+    
+  }
+}
+@media only screen and (max-width:480px) {
+  .r_details {
+    /* font-size: 38px; */
+    margin: 20px 0;
+  }
+  .r_desc{
+    margin-top: 20px;
+  }
+}
+.buttontag1{
+  border: 0px;
+  width: fit-content;
+  margin: 20px 5px ;
+  padding: 10px 20px ;
+  background-color: rgb(85, 0, 159);
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}

@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  user-select: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  scroll-behavior: smooth;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main_parent{
+  max-width: 1550px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main_header{
+  background : rgba(156, 51, 255, 0.416);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  
+}
+.main_header_container{
+  background-color: rgba(156, 51, 255, 0.835);
+  display: flex;
+  /* padding: 5px 10px; */
+  
+}
+.main_header_button{
+  border: 0px;
+  background : rgba(156, 51, 255, 0.835);
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px;
+  margin: 5px;
+}
+.main_header_container_text{
+  display: flex;
+  justify-content: space-between;
+}
+.main_nav_container{
+  display: flex;
+  justify-content: space-around;
+  max-width: 1550px;
+  /* margin: 0 auto; */
+  padding: 20px 15px;
+  align-items: center;
+  background-color: blueviolet;
+}
+.main_nav_container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; */
+}
+.main_nav_container ul li {
+  display: inline-block;
+  margin-right: 55px;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+.main_nav_container ul li:hover{
+  font-weight: 600;
+  cursor: pointer;
+}
+.main_nav_container ul li:active{
+  font-weight: 600;
+  cursor: pointer;
+}
+.main_body{
+  margin: 30px 10px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.register_form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-decoration: none;
+  border: 0px;
+  padding: 20px;
+  margin-top: 30px;
+  
+}
+.register_form .inputtag{
+  margin: 20px 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+}
+.buttontag{
+  border: 0px;
+  width: fit-content;
+  margin: 20px 5px ;
+  padding: 10px 20px ;
+  background-color: blueviolet;
+  color: white;
+  font-size: 15px;
+
+}
+ol{
+  padding: 15px 10px;
+}
+ol li {
+  padding: 5px 10px;
+}
+.buttontag a:-webkit-any-link{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#stageheading{
+  margin: 10px;
+  padding: 10px 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.radiostage {
+  margin: 10px;
 }
